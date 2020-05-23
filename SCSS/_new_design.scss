@@ -1,0 +1,56 @@
+.new_design  {
+	display: flex;
+	justify-content: center;
+    flex-wrap: wrap;
+    
+    .text-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+
+        padding: 191px 15px 166px;
+    }
+
+    .pre-title, h2, .main-text {
+        max-width: 570px;
+    }
+
+    .pre-title {
+        font-family: Exo_Thin;
+        font-size: $mainFontSize;
+        font-weight: 700;
+        color: rgb(255, 109, 109);
+        margin-bottom: $mainFontSize;
+        letter-spacing: 3.2px;
+    }
+
+    h2 {
+        font-size: $h2FontSize;
+        font-family: Exo_Thin;
+        font-weight: 700;
+        color: rgba(40, 40, 40, 0.6);
+        margin-bottom: 42px;
+        letter-spacing: 1.6px;
+        text-align: center;
+    }
+
+    .h2_deco {
+        color: rgb(255, 109, 109);
+    }
+
+    .main-text {
+        font-family: Exo_Thin;
+        color: rgba(40, 40, 40, 0.66);
+        font-size: $mainFontSize;
+        font-weight: 700;
+        padding-bottom: 20px;
+        line-height: 1.63;
+    }
+
+    .img-block {
+        width: 40%;
+        background: #ececec url(../image/backg.png) 100% 100%/cover no-repeat;
+    }
+}

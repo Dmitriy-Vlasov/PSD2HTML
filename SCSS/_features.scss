@@ -1,0 +1,103 @@
+.features {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+
+	padding: 138px 15px 184px;
+	background:  
+	url(../image/Earphones.png) 85% 5% no-repeat, 
+	url(../image/Coffee_Cup.png) 95% 105% no-repeat,
+	url(../image/Pen_holder.png) 15% 5% no-repeat;
+    background-color: #f6f5f3;
+        
+    .pre-title, h2 {
+            max-width: 570px;
+            padding: 0 15px;
+            text-align: center;
+        }
+    
+    .pre-title {
+        font-family: Exo_Thin;
+        font-size: $mainFontSize;
+        font-weight: 700;
+        color: rgb(255, 109, 109);
+        margin-bottom: $mainFontSize;
+        letter-spacing: 3.2px;
+    }
+
+    h2 {
+        font-size: $h2FontSize;
+        font-family: Exo_Thin;
+        font-weight: 700;
+        color: rgb(40, 40, 40);
+        letter-spacing: 1.6px;
+    }
+
+    .feature-items {
+        display: flex;
+        padding: 49px 15px;
+    }
+
+    .feature-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    
+        max-width: 340PX;
+        margin-right: 46px;
+    
+        font-family: Exo_Thin;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .feature-item_img {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        margin-bottom: 30px;
+    
+        background: center/cover;
+    }
+
+    h3 {
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.88px;
+          text-align: center;
+          margin-bottom: 19px;
+    }
+
+    p {
+        font-size: $mainFontSize;
+        line-height: 1.63;
+          letter-spacing: 0.64px;
+    }
+}
+
+
+
+
+
+
+@media (max-width:768px) {
+    .features {
+        background-image: none;  
+        background-color: #f6f5f3;
+        padding: 110px 15px;
+
+        .feature-items {
+            flex-direction: column;
+
+            .feature-item {
+                margin-right: 0 !important;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

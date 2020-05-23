@@ -1,0 +1,11 @@
+
+$mainFontSize: 16px; 
+$h2FontSize: 40px;
+
+$buttonColor: #ff6d6d;
+$buttonHoverColor: #FF0505;
+
+
+@mixin buttonTransition {
+    transition: background .3s;
+}

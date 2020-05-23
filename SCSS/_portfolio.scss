@@ -1,0 +1,127 @@
+.portfolio {
+	background: url(../image/portfolio_bg.png) center/cover;
+
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+
+    padding: 100px 15px;
+    
+    .portfolio-items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1110px;
+        width: 100%;
+
+        margin: 0 auto 95px;
+
+        .portfolio-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        
+            max-width: 324px;
+
+            .photo {
+                width: 76px;
+                height: 76px;
+                border: solid 2px rgb(29, 30, 36);
+                background-color: rgb(78, 78, 94);
+            
+                margin-bottom: 26px;
+            }
+
+            .name {
+                font-family: Exo_Thin;
+                font-size: 22px;
+                font-weight: 700;
+                color: white;
+            
+                margin-bottom: 12px;
+            }
+
+            .position {
+                font-family: Exo_Thin;
+                font-size: $mainFontSize;
+                font-weight: 500;
+                color: rgb(255, 109, 109);
+            
+                margin-bottom: 37px;
+            }
+
+            .description {
+                opacity: 0.66;
+                font-family: Exo_Thin;
+                font-size: $mainFontSize;
+                font-style: italic;
+                line-height: 1.63;
+                letter-spacing: 0.64px;
+                color: rgba(255, 255, 255, 0.66);
+            }
+        }
+    }
+
+    .partners-items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .partners-item {
+            display: block;
+            height: 70px;
+            width: 100px;
+        
+            margin-right: 90px;
+        
+            background: center/contain no-repeat;
+            filter: invert(100%);
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width:768px) {
+    .portfolio {    
+        .partners-items {
+            flex-direction: column;
+
+            .partners-item {
+                margin-right: 0 !important;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width:1020px) {
+    .portfolio {
+        
+        .portfolio-items { 
+            display: flex;
+
+            justify-content: center;
+
+            .portfolio-item {
+                margin-bottom: 20px;
+            }
+        }
+        .partners-items {
+            max-width: 620px;
+            margin: 0 auto;
+
+            justify-content: space-between;
+
+            .partners-item {
+                margin-right: 20px;
+            }
+        }
+    }
+}

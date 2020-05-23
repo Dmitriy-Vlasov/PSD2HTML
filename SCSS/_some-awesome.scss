@@ -1,0 +1,55 @@
+.some-awesome {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+    background: 
+    url(../image/some-awesone_bg.png) 50% 100% no-repeat,
+    #f6f5f3;
+    padding: 108px 15px 468px;
+
+    .pre-title, h2, .main-text {
+        max-width: 677px;
+        text-align: center;
+    }
+
+    .pre-title {
+        font-family: Exo_Thin;
+        font-size: $mainFontSize;
+        font-weight: 700;
+        color: rgb(255, 109, 109);
+        margin-bottom: $mainFontSize;
+        letter-spacing: 3.2px;
+    }   
+
+    h2 {
+        font-size: $h2FontSize;
+        font-family: Exo_Thin;
+        font-weight: 700;
+        color: rgb(40, 40, 40);
+        letter-spacing: 1.6px;
+
+        margin-bottom: 48px;
+    }
+
+    .main-text {
+        font-family: Exo_Thin;
+        color: rgba(40, 40, 40, 0.66);
+        font-size: $mainFontSize;
+        font-weight: 700;
+        padding-bottom: 20px;
+        line-height: 1.63;
+    }
+}
+
+
+@media (max-width:850px) {
+    .some-awesome {
+        background-image: none;
+        padding: 108px 15px 108px;
+    }
+
+    .some-awesome .text-block {
+        padding: 0;
+    }
+}

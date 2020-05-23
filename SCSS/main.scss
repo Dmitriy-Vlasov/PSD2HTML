@@ -1,0 +1,26 @@
+@import 'vars';
+@import 'header';
+@import 'new_design';
+@import 'features';
+@import 'resposive-design';
+@import 'portfolio';
+@import 'some-awesome';
+@import 'form';
+@import 'footer';
+
+
+@media (max-width:768px) {
+
+    section {
+        text-align: center;
+    }
+
+    .img-block {
+        display: none;
+    }
+
+    .text-block {
+        width: 100% !important;
+    }
+}
+
